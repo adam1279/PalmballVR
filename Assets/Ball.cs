@@ -6,6 +6,7 @@ public class Ball : MonoBehaviour
 {
     public float speed = 1.0f;
     public Transform target;
+    public BallController bc;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,10 +22,11 @@ public class Ball : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         //Debug.Log("wut");
-        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Paddle")
+        if (collision.gameObject.tag == "Player")
         {
             //Debug.Log("lol");
             Destroy(this.gameObject);
+            bc.Hit();
         }
     }
 }

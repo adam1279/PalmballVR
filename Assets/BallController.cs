@@ -5,9 +5,11 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     public Transform ball;
+    public int hits = 0;
     // Start is called before the first frame update
     void Start()
     {
+        hits = 0;
         InvokeRepeating("CreateBall", 2.0f, 2.0f);
     }
 
@@ -20,5 +22,9 @@ public class BallController : MonoBehaviour
     {
         Instantiate(ball);
 
+    }
+    public void Hit() {
+        Debug.Log("ry");
+        hits += 1;
     }
 }
