@@ -8,8 +8,8 @@ public class ReceiveHandPositions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        osc.SetAddressHandler("/Right/", LogMsg);
-        //osc.SetAddressHandler("/HandPosition1", SetHandPosition1);
+        //osc.SetAddressHandler("/Right/", LogMsg);
+        osc.SetAddressHandler("/HandPosition1", SetHandPosition1);
         //osc.SetAddressHandler("/HandPosition2", SetHandPosition2);
         Debug.Log("huh");
     }
