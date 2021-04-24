@@ -14,15 +14,15 @@ public class CameraControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 smoothMouseDelta = Vector2.Scale(new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")), Vector2.one * sensitivity * smoothing);
+        /*Vector2 smoothMouseDelta = Vector2.Scale(new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")), Vector2.one * sensitivity * smoothing);
         appliedMouseDelta = Vector2.Lerp(appliedMouseDelta, smoothMouseDelta, 1 / smoothing);
         currentMouseLook += appliedMouseDelta;
         currentMouseLook.y = Mathf.Clamp(currentMouseLook.y, -90, 90);
@@ -30,6 +30,6 @@ public class CameraControl : MonoBehaviour
         // Rotate camera and controller.
         transform.localRotation = Quaternion.AngleAxis(-currentMouseLook.y, Vector3.right);
         transform.localRotation = Quaternion.AngleAxis(currentMouseLook.x, Vector3.up);
-        transform.localRotation = Quaternion.Euler(-currentMouseLook.y, currentMouseLook.x, 0);
+        transform.localRotation = Quaternion.Euler(-currentMouseLook.y, currentMouseLook.x, 0);*/
     }
 }

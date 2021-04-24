@@ -23,10 +23,12 @@ namespace Mirror
         void Awake()
         {
             manager = GetComponent<NetworkManager>();
-            if (/*SystemInfo.deviceType == DeviceType.Handheld*/true)
+            if (SystemInfo.deviceType == DeviceType.Handheld)
             {
                 manager.StartHost();
                 Debug.Log("rain");
+            } else {
+                showGUI = true;
             }
         }
 

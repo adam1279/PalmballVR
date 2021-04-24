@@ -420,7 +420,7 @@ Transform:
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.9063079, y: 0, z: 0, w: 0.42261827}
   m_LocalPosition: {x: 0, y: 6, z: -2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.0000006, z: 1.0000006}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1282,6 +1282,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23f2cce114628a448bfeaae171b4c0c0, type: 3}
+--- !u!1 &792259956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3914758157354688580, guid: d7184ec8471fae540ab8ab5c386d9add,
+    type: 3}
+  m_PrefabInstance: {fileID: 3914758158313671989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &792259961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792259956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Device: 0
+  m_PoseSource: 2
+  m_PoseProviderComponent: {fileID: 0}
+  m_TrackingType: 1
+  m_UpdateType: 0
+  m_UseRelativeTransform: 0
 --- !u!1 &855003605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,6 +1615,7 @@ GameObject:
   - component: {fileID: 1506496703}
   - component: {fileID: 1506496702}
   - component: {fileID: 1506496701}
+  - component: {fileID: 1506496705}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -1619,7 +1644,7 @@ MonoBehaviour:
   ReceiveWindowSize: 4096
   debugLog: 0
   statisticsGUI: 0
-  statisticsLog: 0
+  statisticsLog: 1
 --- !u!114 &1506496702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1683,6 +1708,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1506496705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506496700}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 665802ed87a9d7c4a972e6439e76bf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1523199566 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 11422472, guid: 23f2cce114628a448bfeaae171b4c0c0,
